@@ -72,7 +72,10 @@ e-Arşiv portal üzerinden yeni bir test kullanıcısı oluşturmak ve token alm
 
 ```php
 use Mlevent\Fatura\Gib;
+use Mlevent\Fatura\Client;
 
+
+ Client::setProxy('');
 $gib = (new Gib)->setTestCredentials()
                 ->login();
 
